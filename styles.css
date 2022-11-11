@@ -12,7 +12,6 @@ html, body {
     color: white;
   }
   .content-one {
-    border: 1px solid #0091ff;
     background: linear-gradient(to top, #0b0b2d, #191970);
   }
   .content {border: 1px solid #0091ff;}
@@ -25,8 +24,7 @@ html, body {
     color: black;
   }
   .content-one {
-    border: 1px solid #191970;
-    background: linear-gradient(to top, #0091ff, #addcff);
+    background: linear-gradient(to top, #00ddff, #fff);
   }
   .content {border: 1px solid #191970;}
   .content-one a img:hover {background-color: #0000d2c9; transition-duration: 0.3s;}
