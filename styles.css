@@ -13,9 +13,10 @@ html, body {
   }
   .content-one {
     border: 1px solid #0091ff;
-    background: linear-gradient(to top, #181864, #2322a5);
+    background: linear-gradient(to top, #0b0b2d, #1c1c82);
   }
   .content {border: 1px solid #0091ff;}
+  .content-one a img:hover {background-color: #0091ff55; transition-duration: 0.3s;}
 }
 
 @media (prefers-color-scheme: light) {
@@ -25,9 +26,10 @@ html, body {
   }
   .content-one {
     border: 1px solid #1c1c82;
-    background: linear-gradient(to top, #0787fe, #7ccdff);
+    background: linear-gradient(to top, #0091ff, #addcff);
   }
   .content {border: 1px solid #1c1c82;}
+  .content-one a img:hover {background-color: #2322a588; transition-duration: 0.3s;}
 }
 
 .content-one {
@@ -73,7 +75,13 @@ html, body {
 }
 
 .content-one > a {
-  padding: 5px;
+  padding: 3px 3px;
+}
+
+.content-one > a > img {
+  padding: 7px 7px;
+  border-radius: 4px;
+  transition-duration: 0.3s;
 }
 
 .content {
