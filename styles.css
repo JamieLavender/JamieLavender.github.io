@@ -14,8 +14,7 @@ html, body {
   .content-one {
     background: linear-gradient(to top, #0b0b2d, #000);
   }
-  .content {border: 1px solid #0091ff;}
-  .content-one a img:hover {background-color: #00aaffc9; transition-duration: 0.3s;}
+  .content-one a img:hover {background-color: #ffffff55; transition-duration: 0.3s;}
 }
 
 @media (prefers-color-scheme: light) {
@@ -26,8 +25,7 @@ html, body {
   .content-one {
     background: linear-gradient(to top, #00ddff, #fff);
   }
-  .content {border: 1px solid #191970;}
-  .content-one a img:hover {background-color: #0000d2c9; transition-duration: 0.3s;}
+  .content-one a img:hover {background-color: #00000055; transition-duration: 0.3s;}
 }
 
 .content-one {
