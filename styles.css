@@ -8,7 +8,7 @@ html, body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: linear-gradient(to bottom, #0b0b2d, #191970);
+    background: #000030;
     color: white;
   }
   .content-one {
@@ -21,7 +21,7 @@ html, body {
 
 @media (prefers-color-scheme: light) {
   body {
-    background: linear-gradient(to bottom, #0091ff, #addcff);
+    background: #00ddff;
     color: black;
   }
   .content-one {
