@@ -1,0 +1,83 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(to bottom, #0b0b2d, #1c1c82);
+    color: white;
+  }
+  .content-one {
+    border: 1px solid #0091ff;
+    background: linear-gradient(to top, #181864, #2322a5);
+  }
+  .content {border: 1px solid #0091ff;}
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: linear-gradient(to bottom, #0091ff, #addcff);
+    color: black;
+  }
+  .content-one {
+    border: 1px solid #1c1c82;
+    background: linear-gradient(to top, #0787fe, #7ccdff);
+  }
+  .content {border: 1px solid #1c1c82;}
+}
+
+.content-one {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
+}
+
+.two {
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.section {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.content-one {
+  border-radius: 15px;
+  padding: 10px 25px;
+  max-width: 400px;
+  width: 75%;
+}
+
+.content-one > a {
+  padding: 5px;
+}
+
+.content {
+  border-radius: 15px;
+  padding: 10px 25px;
+  max-width: 400px;
+}
