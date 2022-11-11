@@ -12,7 +12,7 @@ html, body {
     color: white;
   }
   .content-one {
-    background: linear-gradient(to top, #0b0b2d, #191970);
+    background: linear-gradient(to top, #0b0b2d, #000);
   }
   .content {border: 1px solid #0091ff;}
   .content-one a img:hover {background-color: #00aaffc9; transition-duration: 0.3s;}
