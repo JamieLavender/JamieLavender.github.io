@@ -8,12 +8,12 @@ html, body {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: linear-gradient(to bottom, #0b0b2d, #1c1c82);
+    background: linear-gradient(to bottom, #0b0b2d, #191970);
     color: white;
   }
   .content-one {
     border: 1px solid #0091ff;
-    background: linear-gradient(to top, #0b0b2d, #1c1c82);
+    background: linear-gradient(to top, #0b0b2d, #191970);
   }
   .content {border: 1px solid #0091ff;}
   .content-one a img:hover {background-color: #00aaffc9; transition-duration: 0.3s;}
@@ -25,10 +25,10 @@ html, body {
     color: black;
   }
   .content-one {
-    border: 1px solid #1c1c82;
+    border: 1px solid #191970;
     background: linear-gradient(to top, #0091ff, #addcff);
   }
-  .content {border: 1px solid #1c1c82;}
+  .content {border: 1px solid #191970;}
   .content-one a img:hover {background-color: #0000d2c9; transition-duration: 0.3s;}
 }
 
