@@ -16,7 +16,7 @@ html, body {
     background: linear-gradient(to top, #0b0b2d, #1c1c82);
   }
   .content {border: 1px solid #0091ff;}
-  .content-one a img:hover {background-color: #0091ff55; transition-duration: 0.3s;}
+  .content-one a img:hover {background-color: #00aaffc9; transition-duration: 0.3s;}
 }
 
 @media (prefers-color-scheme: light) {
@@ -29,7 +29,7 @@ html, body {
     background: linear-gradient(to top, #0091ff, #addcff);
   }
   .content {border: 1px solid #1c1c82;}
-  .content-one a img:hover {background-color: #2322a588; transition-duration: 0.3s;}
+  .content-one a img:hover {background-color: #0000d2c9; transition-duration: 0.3s;}
 }
 
 .content-one {
