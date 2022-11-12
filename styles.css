@@ -11,18 +11,10 @@ html, body {
     background: #000;
     color: white;
   }
-  .content-start {
+  .content-one {
     background: linear-gradient(to bottom, #191970, #000);
   }
-  .content-mid {
-    background: linear-gradient(to top, #000, #11114d, #000);
-  }
-  .content-end {
-    background: linear-gradient(to top, #191970, #000);
-  }
   .content-one a img:hover {background-color: #ffffff55; transition-duration: 0.3s;}
-  .tag {background-color: #191970;}
-  .tag:hover {background-color: #00aaff; color: black;}
 }
 
 @media (prefers-color-scheme: light) {
@@ -30,26 +22,18 @@ html, body {
     background: #fff;
     color: black;
   }
-  .content-start {
+  .content-one {
     background: linear-gradient(to bottom, #00ddff, #fff);
   }
-  .content-mid {
-    background: linear-gradient(to top, #fff, #00ddff, #fff);
-  }
-  .content-end {
-    background: linear-gradient(to top, #00ddff, #fff);
-  }
   .content-one a img:hover {background-color: #00000055; transition-duration: 0.3s;}
-  .tag {background-color: #00bbff;}
-  .tag:hover {background-color: #191970; color: white;}
 }
 
 .content-one {
-  -webkit-animation: fadein 2s!important; /* Safari, Chrome and Opera > 12.1 */
-  animation: fadein 2s!important;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s;
 }
 
-.content {
+.two {
   -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
   animation: fadein 4s;
 }
@@ -79,7 +63,7 @@ html, body {
   padding: 10px 0;
 }
 
-.content {
+.content-one {
   border-radius: 15px;
   padding: 10px 25px;
   max-width: 400px;
@@ -100,17 +84,4 @@ html, body {
   border-radius: 15px;
   padding: 10px 25px;
   max-width: 400px;
-}
-
-.tag {
-  border: 0px;
-  border-radius: 1000px;
-  padding: 6px 12px;
-  transition-duration: 0.2s;
-}
-
-.tag:hover {cursor: default; transition-duration: 0.2s;}
-
-.vsecspacing {
-  height: 1%;
 }
