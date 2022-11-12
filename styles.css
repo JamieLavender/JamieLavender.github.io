@@ -2,8 +2,6 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: Arial;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,10 +9,15 @@ html, body {
     background: #000;
     color: white;
   }
-  .content-one {
+  .content-start {
     background: linear-gradient(to bottom, #191970, #000);
   }
+
+  .content-end {
+    background: linear-gradient(to top, #191970, #000);
+  }
   .content-one a img:hover {background-color: #ffffff55; transition-duration: 0.3s;}
+  .tag {border-color: #fff;}
 }
 
 @media (prefers-color-scheme: light) {
@@ -22,31 +25,28 @@ html, body {
     background: #fff;
     color: black;
   }
-  .content-one {
+  .content-start {
     background: linear-gradient(to bottom, #00ddff, #fff);
   }
+
+  .content-end {
+    background: linear-gradient(to top, #00ddff, #fff);
+  }
   .content-one a img:hover {background-color: #00000055; transition-duration: 0.3s;}
+  .tag {border-color: #000;}
 }
 
-.content-one {
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  animation: fadein 2s;
+.content-start {
+  -webkit-animation: fadein 2s!important; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 2s!important;
 }
 
-.two {
-  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-  animation: fadein 4s;
+.content-end {
+  -webkit-animation: fadein 6s!important; /* Safari, Chrome and Opera > 12.1 */
+  animation: fadein 6s!important;
 }
 
 @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
     from {
         opacity:0;
     }
@@ -60,18 +60,18 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 0;
+  padding: 0.5% 0;
 }
 
-.content-one {
+.content {
   border-radius: 15px;
-  padding: 10px 25px;
-  max-width: 400px;
-  width: 75%;
+  padding: 30px 20px;
+  max-width: 600px;
+  width: 85%;
 }
 
 .content-one > a {
-  padding: 3px 3px;
+  padding: 10px 10px;
 }
 
 .content-one > a > img {
@@ -80,8 +80,16 @@ html, body {
   transition-duration: 0.3s;
 }
 
-.content {
-  border-radius: 15px;
-  padding: 10px 25px;
-  max-width: 400px;
+.tag {
+  border: 1px solid;
+  border-radius: 100cm;
+  padding: 3px 12px;
+}
+
+.tag:hover {
+  cursor: default;
+}
+
+.vsecspacing {
+  height: 4%;
 }
