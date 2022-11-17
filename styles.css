@@ -36,6 +36,24 @@ html, body {
   transition-duration: 0.3s;
 }
 
+.PFPimg {
+  border-radius: 500px;
+  padding: 5px;
+}
+
+.PFPimg {
+  -webkit-animation: PFPimgmove 1.5s infinite  alternate;
+  animation: PFPimgmove 1.5s infinite  alternate;
+}
+@-webkit-keyframes PFPimgmove {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
+@keyframes PFPimgmove {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
+
 .tag {
   border: 1px solid;
   border-radius: 100cm;
