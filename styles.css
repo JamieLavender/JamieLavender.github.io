@@ -6,7 +6,7 @@ html, body {
   color: white;
 }
 
-.section {
+.D-S1, .D-S2 {
   text-align: center;
   display: flex;
   align-items: center;
@@ -14,47 +14,47 @@ html, body {
   padding: 0.5% 0;
 }
 
-.content {
+.S-Ct1, .S-Ct2 {
   border-radius: 15px;
   padding: 30px 20px;
   max-width: 750px;
   width: 85%;
 }
 
-.content-one a img:hover {
+.S-Ct1 a img:hover {
   background-color: #00000084;
   transition-duration: 0.3s;
 }
 
-.content-one > a {
+.S-Ct1 > a {
   padding: 10px 10px;
 }
 
-.content-one > a > img {
+.S-Ct1 > a > img {
   padding: 12px 12px;
   border-radius: 4px;
   transition-duration: 0.3s;
 }
 
-.PFPimg {
+.I-Ct1Ig {
   border-radius: 500px;
   padding: 5px;
 }
 
-.PFPimg {
-  -webkit-animation: PFPimgmove 1.5s infinite  alternate;
-  animation: PFPimgmove 1.5s infinite  alternate;
+.I-Ct1Ig {
+  -webkit-animation: I-Ct1IgM 2s infinite  alternate;
+  animation: I-Ct1IgM 2s infinite  alternate;
 }
-@-webkit-keyframes PFPimgmove {
+@-webkit-keyframes I-Ct1IgM {
   0% { transform: translateY(0); }
-  100% { transform: translateY(-15px); }
+  100% { transform: translateY(-20px); }
 }
-@keyframes PFPimgmove {
+@keyframes I-Ct1IgM {
   0% { transform: translateY(0); }
-  100% { transform: translateY(-15px); }
+  100% { transform: translateY(-20px); }
 }
 
-.tag {
+.S-Ct1Tg {
   border: 1px solid;
   border-radius: 100cm;
   padding: 3px 12px;
@@ -62,7 +62,7 @@ html, body {
   color: #9195AB;
 }
 
-.tag:hover {
+.S-Ct1Tg:hover {
   cursor: default;
 }
 
@@ -81,7 +81,7 @@ footer {
   margin-top: auto;
 }
 
-.footer-content {
+.S-FtCt {
   text-align: center;
   padding: 30px 20px;
   max-width: 750px;
