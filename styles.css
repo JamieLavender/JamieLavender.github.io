@@ -1,12 +1,98 @@
+:root {
+  --bg-color-1: #080821;
+  --bg-color-2: #0d0d3b;
+  --bg-color-3: #151560;
+  --text-color-1: #fff;
+}
+
 html, body {
   height: 100%;
   width: 100%;
   font-family: Arial;
-  background-color: #272934;
-  color: white;
+  background-color: var(--bg-color-1);
+  color: var(--text-color-1);
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.D-S1, .D-S2 {
+/* Styling for navigation bar */
+.nav {
+  background-color: var(--bg-color-2);
+  overflow: hidden;
+  padding: 10px;
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.A-Nvg {
+  float: left;
+  display: block;
+  text-decoration: none;
+  color: var(--text-color-1);
+  padding: 14px 24px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-radius: 4px;
+  text-align: center;
+  transition-duration: 0.2s;
+  font-size: 16px;
+  width: 25%;
+  max-width: 60px;
+}
+
+.A-Nvg:hover {
+  background-color: var(--bg-color-3);
+  transition-duration: 0.2s
+}
+
+.A-NvgHid {
+  display: none;
+  min-width: 125px;
+  max-width: 125px;
+}
+
+.A-NvgTog {
+  display: show;
+}
+
+/* Navbar Responsiveness */
+@media screen and (max-width: 600px) {
+  .nav a {display: none;}
+  .nav a.A-NvgHid {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive.a.A-NvgHid {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    width: 75%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100px;
+  }
+}
+
+/* Separator Styling */
+.separator {height: 10%;}
+
+/* Styling for Divs */
+
+.D-S1, .D-S2, .D-S3, .D-S4, .D-S5 {
   text-align: center;
   display: flex;
   align-items: center;
@@ -14,27 +100,21 @@ html, body {
   padding: 0.5% 0;
 }
 
-.S-Ct1, .S-Ct2 {
-  border-radius: 15px;
+.D-S1 {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+/* Styling for spans directly within divs */
+
+.S-Ct1, .S-Ct2, .S-Ct3, .S-Ct4, .S-Ct5 {
   padding: 30px 20px;
   max-width: 750px;
   width: 85%;
+  height: 100%;
 }
 
-.S-Ct1 a img:hover {
-  background-color: #00000084;
-  transition-duration: 0.3s;
-}
-
-.S-Ct1 > a {
-  padding: 10px 10px;
-}
-
-.S-Ct1 > a > img {
-  padding: 12px 12px;
-  border-radius: 4px;
-  transition-duration: 0.3s;
-}
+/* First Div Styling */
 
 .I-Ct1Ig {
   border-radius: 500px;
@@ -44,6 +124,10 @@ html, body {
 .I-Ct1Ig {
   -webkit-animation: I-Ct1IgM 2s infinite  alternate;
   animation: I-Ct1IgM 2s infinite  alternate;
+  height: 25%;
+  width: 25%;
+  min-height: 100px;
+  min-width: 100px;
 }
 @-webkit-keyframes I-Ct1IgM {
   0% { transform: translateY(0); }
@@ -54,36 +138,34 @@ html, body {
   100% { transform: translateY(-20px); }
 }
 
-.S-Ct1Tg {
-  border: 1px solid;
-  border-radius: 100cm;
-  padding: 3px 12px;
-  border-color: #9195AB;
-  color: #9195AB;
+/* Second Section Styling */
+
+/* Third Section Styling */
+
+/* Fourth Section Styling */
+.D-Ct3 {
+  width: 40%;
+  max-width: 300px;
+  background-color: var(--bg-color-2);
+  padding: 15px;
 }
 
-.S-Ct1Tg:hover {
-  cursor: default;
+.I-Ct3D {}
+
+.H-Ct3D {
+  font-size: 18px;
 }
 
-p {
-  color: #9195AB;
-}
+.P-Ct3D {}
 
-hr {
-  color: #9195AB;
-}
+
+/* Fifth Section Styling */
+
+/* Footer styling */
 
 footer {
   text-align: center;
   padding: 0.5% 0;
   margin-bottom: 0px;
   margin-top: auto;
-}
-
-.S-FtCt {
-  text-align: center;
-  padding: 30px 20px;
-  max-width: 750px;
-  width: 85%;
 }
