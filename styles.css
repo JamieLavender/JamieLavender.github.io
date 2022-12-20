@@ -59,6 +59,10 @@ html, body {
   display: show;
 }
 
+.NC {
+  cursor: not-allowed;
+}
+
 /* Navbar Responsiveness */
 @media screen and (max-width: 600px) {
   .nav a {display: none;}
