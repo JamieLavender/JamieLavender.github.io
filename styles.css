@@ -1,7 +1,7 @@
 :root {
   --bg-color-1: #080821;
-  --bg-color-2: #0d0d3b;
-  --bg-color-3: #151560;
+  --bg-color-2: #101047;
+  --bg-color-3: #1d1d90;
   --text-color-1: #fff;
 }
 
@@ -15,6 +15,7 @@ html, body {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  scroll-behavior: smooth;
 }
 
 /* Styling for navigation bar */
@@ -40,8 +41,11 @@ html, body {
   text-align: center;
   transition-duration: 0.2s;
   font-size: 16px;
-  width: 25%;
-  max-width: 60px;
+}
+
+.A-NvgI {
+  padding: 7px 10px!important;
+  max-width: 40px;
 }
 
 .A-Nvg:hover {
@@ -59,17 +63,15 @@ html, body {
   display: show;
 }
 
-.NC {
-  cursor: not-allowed;
-}
-
 /* Navbar Responsiveness */
 @media screen and (max-width: 600px) {
-  .nav a {display: none;}
+  .nav a:not(:first-child) {
+    display: none;
+  }
   .nav a.A-NvgHid {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
+    margin: 0 auto;
+    display: inline;
+    float: right;
   }
 }
 
@@ -92,15 +94,15 @@ html, body {
 }
 
 /* Separator Styling */
-.separator {height: 10%;}
+.separator {
+  height: 10%;
+  max-height: 100px;
+}
 
 /* Styling for Divs */
 
 .D-S1, .D-S2, .D-S3, .D-S4, .D-S5 {
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 0.5% 0;
 }
 
@@ -144,11 +146,70 @@ html, body {
 
 /* Second Section Styling */
 
-/* Third Section Styling */
+/* Third + Fourth Section Styling */
+.D-S3A, .D-S4A {
+  text-align: center;
+}
 
-/* Fourth Section Styling */
+.D-S3B, .D-S4B {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
 
-/* Fifth Section Styling */
+.D-Ct3FBxD > img {
+  height: 50%;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.D-Ct4FBxD > img {
+  height: 30%;
+  width: 30%;
+  min-height: 32px;
+  min-width: 32px;
+  max-height: 100px;
+  max-width: 100px;
+  border-radius: 5px;
+}
+
+.D-Ct3FBxD > h4 > a, .D-Ct4FBxD > h4 > a {
+  color: #1fa9ff;
+  text-decoration: none;
+}
+
+.D-Ct3FBx, .D-Ct4FBx {
+  background-color: var(--bg-color-2);
+  border-radius: 4px;
+  padding: 10px;
+  flex: 50%;
+  width: 45%;
+  min-width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .D-Ct3FBx {
+    width: 45%;
+  }
+  .D-Ct4FBx {
+    width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .D-S3B, .D-S4B {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .D-Ct3FBx, .D-Ct4FBx {
+    width: 90%;
+    min-width: 100px;
+  }
+}
 
 /* Footer styling */
 
