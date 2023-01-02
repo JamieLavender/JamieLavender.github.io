@@ -14,6 +14,143 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<body>
+
+  <div class="nav" id="navBar">
+    <a class="A-Nvg" href="#scrollAbout">About</a>
+    <a class="A-Nvg" href="#scrollProjects">Projects</a>
+    <a class="A-Nvg" href="#scrollExperience">Experience</a>
+    <a class="A-Nvg" href="#scrollContact">Contact</a>
+    <a href="javascript:void(0);" class="A-Nvg A-NvgHid" onclick="navToggle()"><i class="fa fa-bars"></i><span
+        id="changeNavText"> Navigation</span></a>
+  </div>
+
+  <div style="height: 3%;"></div>
+
+  <div class="D-S1">
+    <span class="S-Ct1">
+      <img class="I-Ct1Ig" draggable="false" src="aCoolPFP.gif">
+      <h1 style="font-size: 45px;" class="textGlow">RagingJamie</h1>
+      <h3>👋🏼 Hey, I'm Jamie and I code stuff.</h3>
+    </span>
+  </div>
+
+  <div style="height: 3%;"></div>
+
+  <div class="D-S2" id="scrollAbout">
+    <span class="S-Ct2">
+      <h2>About</h2>
+      <p>This section is currently empty. Check again later!</p>
+    </span>
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="D-S3" id="scrollProjects">
+
+    <div class="D-S3A">
+
+      <h2>Projects</h2>
+      <p>Some of the amazing things I've coded!</p>
+
+    </div>
+
+    <div class="D-S3B">
+
+      <div class="D-Ct3FBx" style="flex-basis: auto;">
+        <div class="D-Ct3FBxD">
+          <img src="project1.png">
+        </div>
+        <div class="D-Ct3FBxD">
+          <h4 style="font-size: 18px;"><a href="https://ragingjamie.repl.co">This website</a></h4>
+          <p>This award winning* portfolio, made by and for me.</p>
+        </div>
+      </div>
+
+      <div class="D-Ct3FBx" style="flex-basis: auto;">
+        <div class="D-Ct3FBxD">
+          <img src="">
+        </div>
+        <div class="D-Ct3FBxD">
+          <h4 style="font-size: 18px;"><a>Dragon Repeller</a></h4>
+          <p>Coming Soon! ⏱️</p>
+        </div>
+      </div>
+
+      <div class="D-Ct3FBx" style="flex-basis: auto;">
+        <div class="D-Ct3FBxD">
+          <img src="">
+        </div>
+        <div class="D-Ct3FBxD">
+          <h4 style="font-size: 18px;"><a>Coming Soon!</a></< /h4>
+            <p>⏱️</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="D-S3A">
+
+      <p><i>*Self-awarded</i></p>
+
+    </div>
+
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="D-S4" id="scrollRoles">
+
+    <div class="D-S4A">
+
+      <h2>Roles</h2>
+
+    </div>
+
+    <div class="D-S4B">
+
+      <div class="D-Ct4FBx" style="flex-basis: auto;">
+        <div class="D-Ct4FBxD">
+          <img src="https://cdn.discordapp.com/icons/983858506140639352/307f11e58b38e3bab04758b39fa6cce1.webp?size=240">
+        </div>
+        <div class="D-Ct4FBxD">
+          <h4 style="font-size: 18px;"><a href="https://discord.gg/FEDP6X6epf" target="_blank">Parallel Studios</a></h4>
+          <p>Administrator, Moderator and Support.</p>
+        </div>
+      </div>
+
+      <div class="D-Ct4FBx" style="flex-basis: auto;">
+        <div class="D-Ct4FBxD">
+          <img src="CoolPFP.png">
+        </div>
+        <div class="D-Ct4FBxD">
+          <h4 style="font-size: 18px;"><a href="https://discord.gg/N9uHy4U44q" target="_blank">RagingJamie's Town Hall</a></h4>
+          <p>Mayor</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="separator"></div>
+
+  <div class="info">
+    <p><i>Light mode and mobile UX updates are planned.</i></p>
+  </div>
+
+
+  <hr>
+
+  <footer>
+    <span class="S-FtCt">
+      <p>v0.8.40</p>
+      <p>© RagingJamie 2022-2023</p>
+    </span>
+  </footer>
+
+</body>
+
 <script>
   function navToggle() {
     const navBar = document.getElementById("navBar");
@@ -24,37 +161,5 @@
     }
   }
 </script>
-
-<body>
-  <div class="nav" id="navBar">
-    <a class="A-Nvg" href="#scrollAbout">About</a>
-    <a class="A-Nvg NC">Projects</a>
-    <a class="A-Nvg NC">Roles</a>
-    <a class="A-Nvg NC">Contact</a>
-    <a href="javascript:void(0);" class="A-Nvg A-NvgHid" onclick="navToggle()"><i class="fa fa-bars"></i><span id="changeNavText"> Navigation</span></a>
-  </div>
-  <div style="height: 3%;"></div>
-  <div class="D-S1">
-    <span class="S-Ct1">
-      <img class="I-Ct1Ig" draggable="false" src="aCoolPFP.gif">
-      <h1 style="font-size: 45px;">RagingJamie</h1>
-    </span>
-  </div>
-  <div class="separator"></div>
-  <div class="D-S2" id="scrollAbout">
-    <span class="S-Ct2">
-      <h2>About</h2>
-      <p>👋🏼 Hello World, I'm Jamie, 15, and I code stuff</p>
-      <p></p>
-    </span>
-  </div>
-  <div class="separator"></div>
-  <footer>
-    <span class="S-FtCt">
-      <p>v0.8.26</p>
-      <p>RagingJamie 2022-2023</p>
-    </span>
-  </footer>
-</body>
 
 </html>
