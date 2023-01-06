@@ -3,6 +3,7 @@
   --bg-color-2: #101047;
   --bg-color-3: #1d1d90;
   --text-color-1: #fff;
+  --text-color-2: #1fa9ff;
 }
 
 html, body {
@@ -95,7 +96,7 @@ html, body {
 
 /* Separator Styling */
 .separator {
-  height: 10%;
+  height: 3%;
   max-height: 100px;
 }
 
@@ -107,8 +108,7 @@ html, body {
 }
 
 .D-S1 {
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding: 5%;
 }
 
 /* Styling for spans directly within divs */
@@ -175,7 +175,7 @@ html, body {
 }
 
 .D-Ct3FBxD > h4 > a, .D-Ct4FBxD > h4 > a {
-  color: #1fa9ff;
+  color: var(--text-color-2);
   text-decoration: none;
 }
 
@@ -209,6 +209,53 @@ html, body {
     width: 90%;
     min-width: 100px;
   }
+}
+
+/* Fifth Section Styling */
+
+.CF-Input {
+  border: 1px solid var(--bg-color-3);
+  background-color: var(--bg-color-1);
+  color: var(--text-color-1);
+  border-radius: 6px;
+  transition-duration: 0.2s;
+}
+
+.CF-Input:hover {
+  border: 1px solid var(--text-color-2);
+  background-color: var(--bg-color-2);
+  transition-duration: 0.2s;
+}
+
+.CF-Input-Email {
+  width: 300px;
+  height: 30px;
+}
+
+.CF-Input-Title {
+  width: 300px;
+  height: 30px;
+}
+
+.CF-Input-Body {
+  width: 400px;
+  height: 150px;
+}
+
+.CF-Input-Submit {
+  border: 1px solid var(--bg-color-2);
+  background-color: var(--bg-color-2);
+  color: var(--text-color-1);
+  border-radius: 6px;
+  transition-duration: 0.2s;
+  padding: 16px 40px;
+}
+
+.CF-Input-Submit:hover {
+  border: 1px solid var(--bg-color-3);
+  transition-duration: 0.2s;
+  background-color: var(--bg-color-3);
+  cursor: not-allowed;
 }
 
 /* Footer styling */
